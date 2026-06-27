@@ -13,6 +13,7 @@ import HealthcarePage from "../features/healthcare/pages/HealthcarePage.jsx";
 import CareerPage from "../features/career/pages/CareerPage.jsx";
 import LegalPage from "../features/legal/pages/LegalPage.jsx";
 import FinancePage from "../features/finance/pages/FinancePage.jsx";
+import ProfilePage from "../features/profile/pages/ProfilePage.jsx";
 import { useAuth } from "../contexts/AuthContext.jsx";
 import { ProtectedRoute } from "./ProtectedRoute.jsx";
 
@@ -115,6 +116,16 @@ export default function AppRoutes() {
         element={
           <ProtectedRoute>
             <FinancePage />
+          </ProtectedRoute>
+        }
+      />
+
+      {/* Protected Citizen Profile & Personalization */}
+      <Route
+        path="/profile"
+        element={
+          <ProtectedRoute>
+            <ProfilePage />
           </ProtectedRoute>
         }
       />
