@@ -9,6 +9,7 @@ import Dashboard from "../features/dashboard/pages/Dashboard.jsx";
 import ChatPage from "../features/chat/pages/ChatPage.jsx";
 import GovernmentPage from "../features/schemes/pages/GovernmentPage.jsx";
 import DocumentsPage from "../features/documents/pages/DocumentsPage.jsx";
+import HealthcarePage from "../features/healthcare/pages/HealthcarePage.jsx";
 import { useAuth } from "../contexts/AuthContext.jsx";
 import { ProtectedRoute } from "./ProtectedRoute.jsx";
 
@@ -17,11 +18,6 @@ const HomeRoute = () => {
   return user ? <Dashboard /> : <LandingPage />;
 };
 
-const HealthcareShell = () => (
-  <div className="p-8 text-center text-xl font-bold">
-    Healthcare Placeholder Shell
-  </div>
-);
 const CareerShell = () => (
   <div className="p-8 text-center text-xl font-bold">
     Career Placeholder Shell
@@ -90,15 +86,17 @@ export default function AppRoutes() {
         }
       />
 
-      {/* Protected Module Routes */}
+      {/* Protected AI Healthcare Assistant */}
       <Route
         path="/healthcare"
         element={
           <ProtectedRoute>
-            <HealthcareShell />
+            <HealthcarePage />
           </ProtectedRoute>
         }
       />
+
+      {/* Protected Module Routes */}
       <Route
         path="/career"
         element={
