@@ -2,11 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bharat-one</title>
+
+    <!-- ── Primary SEO ────────────────────────────────────────────────────── -->
+    <title>BharatOne AI — India's Universal Citizen Assistant</title>
+    <meta
+      name="description"
+      content="BharatOne AI empowers every Indian citizen with AI-powered access to government schemes, healthcare, legal guidance, career advice, financial literacy, and document intelligence — in your language."
+    />
+    <meta
+      name="keywords"
+      content="BharatOne, India AI, government schemes, PM Kisan, Ayushman Bharat, citizen portal, legal aid, career advisor, financial literacy, document AI, Gemini AI, bharat"
+    />
+    <meta name="author" content="BharatOne AI" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://bharatone.vercel.app/" />
+
+    <!-- ── Open Graph (Facebook / LinkedIn) ──────────────────────────────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BharatOne AI" />
+    <meta property="og:title" content="BharatOne AI — India's Universal Citizen Assistant" />
+    <meta
+      property="og:description"
+      content="AI-powered access to government schemes, healthcare, legal guidance, career advice, and document intelligence for every Indian citizen."
+    />
+    <meta property="og:url" content="https://bharatone.vercel.app/" />
+    <meta property="og:image" content="https://bharatone.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- ── Twitter / X Cards ─────────────────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BharatOne AI — India's Universal Citizen Assistant" />
+    <meta
+      name="twitter:description"
+      content="AI-powered government schemes, healthcare, legal, career & finance for every Indian citizen."
+    />
+    <meta name="twitter:image" content="https://bharatone.vercel.app/og-image.png" />
+
+    <!-- ── Favicon & App Icons ───────────────────────────────────────────── -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- ── PWA Manifest ──────────────────────────────────────────────────── -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#FF9933" />
+
+    <!-- ── Structured Data (JSON-LD) ─────────────────────────────────────── -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "BharatOne AI",
+        "description": "India's AI-powered universal citizen assistant platform",
+        "url": "https://bharatone.vercel.app/",
+        "applicationCategory": "GovernmentApplication",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "inLanguage": ["en-IN", "hi-IN"],
+        "countryOfOrigin": "IN"
+      }
+    </script>
   </head>
   <body>
+    <!-- Skip navigation for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-saffron focus:text-white focus:rounded-lg focus:font-semibold"
+    >
+      मुख्य सामग्री पर जाएं (Skip to main content)
+    </a>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Block private / authenticated routes from indexing
+Disallow: /chat
+Disallow: /profile
+Disallow: /documents
+Disallow: /complete-profile
+Disallow: /verify-email
+
+# Sitemap location
+Sitemap: https://bharatone.vercel.app/sitemap.xml
