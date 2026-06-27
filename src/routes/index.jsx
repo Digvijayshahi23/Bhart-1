@@ -12,6 +12,7 @@ import DocumentsPage from "../features/documents/pages/DocumentsPage.jsx";
 import HealthcarePage from "../features/healthcare/pages/HealthcarePage.jsx";
 import CareerPage from "../features/career/pages/CareerPage.jsx";
 import LegalPage from "../features/legal/pages/LegalPage.jsx";
+import FinancePage from "../features/finance/pages/FinancePage.jsx";
 import { useAuth } from "../contexts/AuthContext.jsx";
 import { ProtectedRoute } from "./ProtectedRoute.jsx";
 
@@ -104,6 +105,16 @@ export default function AppRoutes() {
         element={
           <ProtectedRoute>
             <LegalPage />
+          </ProtectedRoute>
+        }
+      />
+
+      {/* Protected AI Finance & Welfare Assistant */}
+      <Route
+        path="/finance"
+        element={
+          <ProtectedRoute>
+            <FinancePage />
           </ProtectedRoute>
         }
       />
