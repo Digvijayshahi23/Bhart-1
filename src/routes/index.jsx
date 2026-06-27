@@ -11,6 +11,7 @@ import GovernmentPage from "../features/schemes/pages/GovernmentPage.jsx";
 import DocumentsPage from "../features/documents/pages/DocumentsPage.jsx";
 import HealthcarePage from "../features/healthcare/pages/HealthcarePage.jsx";
 import CareerPage from "../features/career/pages/CareerPage.jsx";
+import LegalPage from "../features/legal/pages/LegalPage.jsx";
 import { useAuth } from "../contexts/AuthContext.jsx";
 import { ProtectedRoute } from "./ProtectedRoute.jsx";
 
@@ -19,11 +20,6 @@ const HomeRoute = () => {
   return user ? <Dashboard /> : <LandingPage />;
 };
 
-const LegalShell = () => (
-  <div className="p-8 text-center text-xl font-bold">
-    Legal Placeholder Shell
-  </div>
-);
 const NotFoundShell = () => (
   <div className="p-8 text-center text-xl font-bold text-red-500">
     404 - Not Found Shell
@@ -102,12 +98,12 @@ export default function AppRoutes() {
         }
       />
 
-      {/* Protected Module Routes */}
+      {/* Protected AI Legal Information Assistant */}
       <Route
         path="/legal"
         element={
           <ProtectedRoute>
-            <LegalShell />
+            <LegalPage />
           </ProtectedRoute>
         }
       />
