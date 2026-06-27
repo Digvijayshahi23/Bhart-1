@@ -8,6 +8,7 @@ import CompleteProfilePage from "../features/auth/pages/CompleteProfilePage.jsx"
 import Dashboard from "../features/dashboard/pages/Dashboard.jsx";
 import ChatPage from "../features/chat/pages/ChatPage.jsx";
 import GovernmentPage from "../features/schemes/pages/GovernmentPage.jsx";
+import DocumentsPage from "../features/documents/pages/DocumentsPage.jsx";
 import { useAuth } from "../contexts/AuthContext.jsx";
 import { ProtectedRoute } from "./ProtectedRoute.jsx";
 
@@ -75,6 +76,16 @@ export default function AppRoutes() {
         element={
           <ProtectedRoute>
             <GovernmentPage />
+          </ProtectedRoute>
+        }
+      />
+
+      {/* Protected Document Intelligence Portal */}
+      <Route
+        path="/documents"
+        element={
+          <ProtectedRoute>
+            <DocumentsPage />
           </ProtectedRoute>
         }
       />
